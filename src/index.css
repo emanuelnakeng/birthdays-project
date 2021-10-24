@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #24252d;
+	height: 100vh;
+} */
+
+.bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #24252d;
+	height: 100vh;
+	width: 100vw;
+}
+.card {
+	box-shadow: 0 5px 15px rgba(199, 190, 190, 0.432);
+	border-radius: 0.3rem;
+}
+
+.person img {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.person .details {
+	display: flex;
+	flex-direction: column;
+	margin-left: 0.8rem;
+}
+
+.person h3 {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	font-weight: 700;
+	color: #102a42;
+	text-transform: capitalize;
+}
+.person p {
+	font-weight: 400;
+	font-size: 0.9rem;
+	color: #617d98;
+}
+
+.person span {
+	font-size: 0.7rem;
+	color: rgb(194, 61, 61);
+	cursor: pointer;
+}
+
+.person {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.people {
+	width: 35vw;
+	height: auto;
+	background-color: #fff;
+	padding: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.people {
+		width: 80vw;
+	}
+
+	.btn {
+		width: 50%;
+	}
+}
+
+.btn {
+	color: white;
+	width: 100%;
+	border-color: transparent;
+	background-color: #24252d;
+	font-size: 1.1rem;
+	padding: 0.5rem 0;
+	border-radius: 0.25rem;
+	outline: 1px solid #d8d8d8;
+	cursor: pointer;
 }
